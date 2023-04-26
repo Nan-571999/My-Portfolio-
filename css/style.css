@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    transition: 0.2s linear;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.753) 70%,rgba(0, 0, 0, 0.39)),url("../img/background.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    font-family: 'Tajawal', sans-serif;
+    padding:12% 18% 0;
+    animation-duration:1s;
+    animation-fill-mode: both;
+    overflow-y: hidden;
+}
+body .home{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color:white;
+}
+@keyframes bodyTop {
+    from{
+        padding:12% 18% 0;
+    }
+    to{
+        padding:4% 18% 0;
+    }
+}
+@keyframes bodyreset {
+    from{
+        padding:4% 18% 0;
+    }
+    to{
+        padding:12% 18% 0;
+    }
+}
+body .home img{
+    width:100px;
+    height:100px;
+    border:2px solid white;
+    border-radius:50%;
+    padding:10px;
+}
+.firstHr{
+    width:2px;
+    height:40px;
+    background-color: white;
+}
+.home section{
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:0 50px;
+    height:50px;
+    width:100%;
+    animation-duration:1s;
+    animation-fill-mode: both;
+}
+@keyframes infoBlock {
+    from{
+        padding:0 50px;
+        height:50px;
+    }
+    to{
+        padding:40px 50px;
+        height:250px;
+    }
+}
+@keyframes resetinfoBlock {
+    from{
+        padding:25px 50px;
+        height:180px;
+    }
+    to{
+        padding:0 50px;
+        height:50px;
+    }
+}
+.home section h1{
+    text-transform: capitalize;
+    margin-bottom:30px;
+    font-size:40px;
+    transition:.5s linear;
+    transition-delay:.4s;
+    visibility: hidden;
+}
+.home section h1 #infoTitle{
+    background: linear-gradient(to right ,#37b9ff, #ee3b80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.home section p{
+    font-size:30px;
+    width:830px;
+    text-align: center;
+    transition:.5s linear;
+    transition-delay:.4s;
+    visibility: hidden;
+}
+.secondHr{
+    width:2px;
+    height:70px;
+    background-color: white;
+}
+.home ul{
+    padding-left:27px;
+}
+.home ul li{
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+    border:1px solid white;
+    padding:15px 45px;
+    margin-right:-5px;
+    font-size:20px;
+}
+.home ul li:hover{
+    background-color: rgba(247, 242, 242, 0.096);
+    cursor: pointer;
+}
+.block{
+    position:absolute;
+    width:580px;
+    height:580px;
+    padding:5px 30px 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: none;
+    background-color: rgb(0, 0, 0);
+    top:6%;
+    left:30%;
+    color: white;
+    opacity:0.7;
+}
+.block .partOne{
+    position: sticky;
+    top:-10px;
+    margin-bottom:20px;
+    height:90px;
+    z-index:100;
+    padding:2px 40px 30px;
+    margin-left:-50px;
+    margin-top:-5px;
+    width:123%;
+    background-color: rgb(0,0,0);
+}
+.intro .partOne img{
+    position:absolute;
+    top:80px;
+    left:-2px;
+    z-index:101;
+    height:95vh;
+    width:650px;
+}
+.block .partOne h2{
+    text-transform: uppercase;
+    width:27%;
+    height:50px;
+    border-bottom:2px solid white;
+    letter-spacing:10px;
+    font-size:40px;
+    margin-top:-20px;
+}
+.fa-xmark{
+    font-size:50px;
+    margin-left:90%;
+    cursor: pointer;
+    visibility: visible;
+}
+.fa-arrow-left-long{
+    font-size:50px;
+    margin-left:-50px;
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+}
+.intro p{
+    position: relative;
+    text-align: center;
+    margin-bottom:30px;
+    width:360px;
+    margin-left:145px;
+}
+.work .partTwo{
+    display:grid;
+    grid-template-columns: repeat(2,250px);
+    gap:20px 15px;
+}
+.work .partTwo > div{
+    height:480px;
+    background-color: rgb(0, 0, 0);
+    border:10px solid;
+}
+.work .partTwo > div img{
+    width:100%;
+    height:200px;
+}
+.work .partTwo > div img:hover{
+    transform: scale(1.3);
+}
+.work .partTwo > div .info{
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:255px;
+    background-color: rgba(64, 63, 65, 0.651);
+    padding: 0 5px 5px;
+}
+.work .partTwo > div .info button{
+    height:35px;
+    font-size: 20px;
+    padding:6px 15px;
+    cursor: pointer;
+    border:2px solid green;
+    background-color:transparent;
+    color:white;
+}
+.work .partTwo > div .info i{
+    margin-right:10px;
+}
+.work .partTwo > div .info button .fa-internet-explorer{
+    font-size: 20px;
+    margin-right: 15px;;
+}
+.work .partTwo >div .info h3{
+    font-size:30px;
+}
+.work .partTwo >div .info p{
+    text-align: left;
+}
+.work .partTwo >div .info div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.work .partTwo >div .info div span{
+    cursor: pointer;
+    border:2px solid green;
+    padding:5px 10px;
+}
+.video{
+    position:absolute;
+    width:700px;
+    height:380px;
+    top:18%;
+    left:25%;
+    color: white;
+    display: none;
+}
+.video video{
+    margin-top:-20px;
+}
+.about .partOne h2{
+    width:48%;
+}
+.about .partTwo {
+    line-height:30px;
+}
+.about .partTwo h4{
+    background: linear-gradient(to right ,#37b9ff, #ee3b80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:30px;
+    font-weight: bold;
+    line-height:60px;
+}
+.about .partTwo h4 span{
+    display: block;
+    font-size:70px;
+}
+.about .partTwo .firstParag{
+    font-size:20px;
+    margin-bottom: 20px;
+}
+.about .partTwo p i{
+    color:yellow;
+    font-size:25px;
+    margin-top:15px;
+}
+.about .partTwo p{
+    font-size:18px;
+    margin: 10px 0 10px 40px;
+}
+.about .partTwo ul{
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-left:40px;
+}
+.about .partTwo ul li{
+    list-style-type: circle;
+    font-size: 15px;
+    margin-right:50px;
+}
+.about .partTwo .lang{
+    height:100px;
+}
+.about .partTwo .lastParag{
+    background: linear-gradient(to right ,#37b9ff, #ee3b80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:30px;
+    font-weight:bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding:10px;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(90deg, #ee3b80,#37b9ff)1;
+}
+.about .partTwo .workSkills{
+    margin-left:55px;
+}
+.courses{
+    display:grid;
+    grid-template-columns: 50px auto;
+    padding-left: 30px;
+    text-align:center;
+    margin-top: 50px;
+}
+.courses h2{
+    font-size:25px;
+    line-height:32px;
+    text-transform: uppercase;
+    background: linear-gradient(to right ,#37b9ff, #ee3b80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+.courses h2 span{
+    display: block;
+}
+.courses > div > div img{
+    width:100px;
+    height:100px;
+    border-radius:30px;
+    margin-left:20px;
+}
+.courses > div > div p{
+   margin:5px 0 70px !important;
+}
+.courses > div > div p span{
+    color:#ee3b80
+}
+.course button{
+    width:200px;
+    height:40px;
+    left:220px;
+    position: absolute;
+    text-transform: uppercase;
+}
+.clickbutton{
+    background-color: #ee3b80;
+}
+.course .button1{
+    top:175%;
+}
+.course .button2{
+    top:197%;
+}
+.course .button3{
+    top:220%;
+}
+.course .button4{
+    top:242%;
+}
+.certificate{
+    width:300px;
+    height:400px;
+    position: absolute;
+    top:110px;
+    left:80px;
+    visibility: hidden;
+}
+.certificate i{
+    color:white;
+    font-size:50px;
+    visibility: hidden;
+}
+.certificate img{
+    width:100%;
+}
+body > .img1{
+    position:absolute;
+    top:220px;
+    left:0px;
+    height:400px;
+    width:550px;
+    display:none;
+}
+body > .img2{
+    position:absolute;
+    top:20px;
+    left:1020px;
+    height:400px;
+    width:300px;
+    animation-name:moveImg2;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    display:none;
+}
+@keyframes moveImg2 {
+    from{
+        top:20px;
+    }
+    to{
+        top:230px;
+    }
+}
+.contact .partTwo .contentContact{
+    height:85vh;
+    flex-basis:1fr;
+    padding:0 10px;
+}
+.contact .partTwo .contentContact input , textarea ,select{
+    width:100%;
+    height:40px;
+    padding:10px 5px;
+    margin-bottom:12px;
+    font-size:15px;
+    text-transform: capitalize;
+    background-color:rgba(10, 9, 9, 0.425);
+    color:white;
+    border:none;
+    border-radius:20px;
+    text-indent:20px;
+}
+.contact .partTwo .contentContact select{
+    height:44px;
+    margin-bottom:-20px;
+}
+.contact .partTwo .contentContact select option{
+    background-color:#ee3b809c;
+}
+.contact .partTwo .contentContact label{
+    text-transform: capitalize;
+    margin-left:20px;
+    margin-bottom:5px;
+}
+.contact .partTwo .contentContact .writeRequest{
+    visibility: hidden;
+    position: absolute;
+    width:53%;
+    height:40px;
+    padding:10px 5px;
+}
+textarea{
+    height:70px;
+}
+.submitForm{
+    background-color: #ee3b80 !important;
+    text-indent:0 !important;
+    width:80% !important;
+    margin-left:40px !important;
+    border: none !important;
+}
+.contact .partTwo .contentContact input:focus , textarea:focus ,select:focus{
+    border:0.5px solid #ee3b80;
+}
+.social{
+    display: flex;
+    position: relative;
+    top:7%;
+    left:-29%;
+}
+.social i{
+    font-size:30px;
+    margin-left:20px;
+}
+.social i:hover{
+    background: linear-gradient(to right ,#37b9ff, #ee3b80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.block::-webkit-scrollbar {
+    display: none;
+}
+.cursor{
+    width:4px;
+    height:37px;
+    background-color: white;
+    display: inline-block;
+    position:absolute;
+    margin-top:7px;
+    margin-left:5px;
+}

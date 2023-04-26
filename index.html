@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <title>My Profoilo</title>
+</head>
+<body>
+    <div class="home">
+        <img src="img/Logo.png" alt="logo"/>
+        <hr class="firstHr">
+        <section>
+            <h1>i'm <span id="infoTitle"></span><hr class="cursor"></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quam officia voluptas eius? Omnis in maiores officiis esse!</p>
+        </section>
+        <hr class="secondHr">
+        <nav>
+            <ul>
+                <li onclick="blockView(0)">intro</li>
+                <li onclick="blockView(1)">work</li>
+                <li onclick="blockView(2)">about</li>
+                <li class="contactus" onclick="blockView(3)">contact</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="intro block">
+        <div class="partOne">
+            <i onclick="blockHide(0)" class="fa-solid fa-xmark"></i>
+            <h2>intro</h2>
+            <img src="img/intro.png" alt=""/>
+        </div>
+        <div class="partTwo">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, quos esse aspernatur error officia praesentium enim, voluptates qui vel, corrupti et rem ullam ducimus nesciunt porro reiciendis quisquam. Quasi, similique.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat perspiciatis quo necessitatibus perferendis quod quasi consectetur unde quas, nostrum corrupti atque pariatur inventore blanditiis iure quibusdam. Vel velit quidem enim.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis porro, eaque aspernatur voluptatibus vel ad excepturi error dolores obcaecati aliquam blanditiis ratione harum! Illum beatae laboriosam atque quas, vero aliquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laudantium fugit, suscipit nihil cum quisquam! Accusantium quam laborum quos fugiat perferendis, voluptatum blanditiis tempore dolorum consequatur rem pariatur, sit mollitia.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vitae voluptatem, nemo, a deserunt qui expedita et quisquam excepturi numquam saepe? Quisquam est facilis culpa dolor officiis non autem magnam?</p>
+        </div>
+    </div>
+    <div class="work block">
+        <div class="partOne">
+            <i onclick="blockHide(1)" class="fa-solid fa-xmark"></i>
+            <i onclick="hiddenWork()" class="fa-solid fa-arrow-left-long"></i>
+            <h2>work</h2>
+        </div>
+        <div class="partTwo">
+            <div>
+                <img src="img/race-website.PNG" alt="race-canva"/>
+                <div class="info">
+                    <h3>race website</h3>
+                    <p><i class="fa-regular fa-circle-check"></i> it's static website using [ HTML , CSS , JavaScript]<br><br><i class="fa-regular fa-circle-check"></i> responsive website for phone and computer.</p>
+                    <a href="https://3vycy3y0d09hdejzgeqypa.on.drv.tw/Suzuki%20Bike%20(NO%20Responsive)/"><button><i class="fa-brands fa-internet-explorer"></i>Visite Website</button></a>
+                    <div>
+                        <span onclick="viewVideo('video/Race Website.mp4')"><i class="fa-solid fa-video"></i> video</span>
+                        <span><i class="fa-brands fa-github"></i><a href="">github</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="img/nouvil-website.PNG" alt="nouvil-canva"/>
+                <div class="info">
+                    <h3>nouvil website</h3>
+                    <p><i class="fa-regular fa-circle-check"></i> it's static website using [ HTML , CSS , JavaScript]<br><br><i class="fa-regular fa-circle-check"></i> responsive website for all screen size.</p>
+                    <a href="https://3vycy3y0d09hdejzgeqypa.on.drv.tw/webSite%20%5B%20HTML%20%2B%20CSS%20%2B%20JS%20%5D%20about%20scroll%20idea/"><button><i class="fa-brands fa-internet-explorer"></i>Visite Website</button></a>
+                    <div>
+                        <span onclick="viewVideo('video/Nouvil Website.mp4')"><i class="fa-solid fa-video"></i> video</span>
+                        <span><i class="fa-brands fa-github"></i><a href="">github</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="img/weather-website.png" alt="weather-canva"/>
+                <div class="info">
+                    <h3>Weather website</h3>
+                    <p><i class="fa-regular fa-circle-check"></i> it's static website using [ HTML , CSS , JavaScript]<br><br><i class="fa-regular fa-circle-check"></i> responsive website just for computer.</p>
+                    <a href="https://3vycy3y0d09hdejzgeqypa.on.drv.tw/weather%20app/"><button><i class="fa-brands fa-internet-explorer"></i>Visite Website</button></a>
+                    <div>
+                        <span onclick="viewVideo('video/Weather Website.mp4')"><i class="fa-solid fa-video"></i> video</span>
+                        <span><i class="fa-brands fa-github"></i><a href="">github</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <i onclick="hiddenVideo()" class="fa-solid fa-xmark"></i>
+        <video src="" class="v1" width="700" height="380" controls></video>
+    </div>
+    <div class="about block">
+        <div class="partOne">
+            <i onclick="blockHide(2)" class="fa-solid fa-xmark"></i>
+            <h2>about me</h2>
+        </div>
+        <div class="partTwo">
+            <h4><span>Nancy Al-Oqdeh</span> Senior Full Stack Developer</h4>
+            <p class="firstParag">I graduated from the University of Jordan - Amman / Jordan from computer information systems (CIS) , specializing in Web Development in 2022.</p>
+            <p><i class="fa-solid fa-circle-info"></i> I have scientific experience in several fields.</p>
+            <ul>
+                <li>UX UI</li>
+                <li>Photoshope</li>
+                <li>Web Design</li>
+                <li>Web Development</li>
+            </ul>
+            <p><i class="fa-solid fa-circle-info"></i> I have prepared projects using </p>
+            <ul class="lang">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>SASS</li>
+                <li>UI</li>
+                <li>Photoshope</li>
+            </ul>
+            <p class="lastParag" onclick="viewWork()">"I delight to you look at them".</p>
+            <p><i class="fa-solid fa-circle-info"></i> Work Skills</p>
+            <ul class="workSkills">
+                <li>which are burden-bearing</li>
+                <li>the ability to work with a team</li>
+                <li>the ability to solve problems and crises</li>
+                <li>deal with others</li>
+                <li>understand the nature of customers</li>
+                <li>the ease of dealing with the customer</li>
+            </ul>
+            <div class="courses">
+                <h2><span>t</span><span>r</span><span>a</span><span>i</span><span>n</span><span>i</span><span>n</span><span>g</span><br><span>c</span><span>o</span><span>u</span><span>r</span><span>s</span><span>e</span><span>s</span></h2>
+                <div>
+                    <div class="course">
+                        <p class="courseP">I received training from <span>Arab International academy</span> in <span>Photoshop</span> field</p>
+                        <button onclick="clickButton(0)" class="button1">View Certificate</button>
+                    </div>
+                    <div class="course">
+                        <p class="courseP">I received training from <span>Arab International academy</span> in <span>ICDL</span> field</p>
+                        <button onclick="clickButton(1)" class="button2">View Certificate</button>
+                    </div> 
+                    <div class="course">
+                        <p class="courseP">I received training from <span>Arab International academy</span> in <span>Data Entry</span> field</p>
+                        <button onclick="clickButton(2)" class="button3">View Certificate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="img1" src="img/about.png" alt="about"/>
+    <img class="img2" src="img/about2.png" alt="about"/>
+    <div class="certificate">
+        <div class="partOne">
+            <i onclick="hiddenCertificate()" class="fa-solid fa-xmark"></i>
+        </div>
+        <img class="certificateImg" src="img/photoshop-course.png" alt=""/>
+    </div>
+    <div class="contact block">
+        <div class="partOne">
+            <i onclick="blockHide(3)" class="fa-solid fa-xmark"></i>
+            <h2>contact</h2>
+        </div>
+        <div class="partTwo">
+            <div class="contentContact">
+                <form>
+                    <input class="data" type="text" placeholder="please write your full name"/><br>
+                    <input class="data" type="email" placeholder="please write your email"/><br>
+                    <input type="tel" placeholder="please write your number"/><br>
+                    <input class="data" type="text" placeholder="please write your country"/><br>
+                    <select class="data">
+                        <option value='' disabled selected>define your request project</option>
+                        <option value='full Website "frontend & backend"'>full Website "frontend & backend"</option>
+                        <option value='design website "frontend"'>design website "frontend"</option>
+                        <option value='design website "figma/xd"'>design website "figma/xd"</option>
+                        <option value="photoshop">photoshop</option>
+                        <option value='create presentation "microsoft powerpoint"'>create presentation "microsoft powerpoint"</option>
+                        <option value='write content "microsoft word"'>write content "microsoft word"</option>
+                        <option value='create tablesheets "microsoft excel"'>create tablesheets "microsoft excel" </option>
+                        <option value="other">other...</option>
+                    </select><br>
+                    <input class="writeRequest" type="text" placeholder="please write your request"/><br>
+                    <label>define submit date</label><br>
+                    <input class="data" type="date"/><br>
+                    <label>define submit time</label><br>
+                    <input class="data" type="time"/><br>
+                    <textarea placeholder="write any comment if have"></textarea>
+                    <input class="submitForm" type="submit" value="Send Request"/>  
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="social">
+        <a href="https://www.facebook.com/nancy.mo.9889?mibextid=LQQJ4d"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fnancyaloqdeh%3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwAR1RrpL5EQBjxQqcKcn2btU2t9jdhsotsRV_yFwqt5hA9fuBPLsVZvK4A-E&h=AT0iayOyJ8KgfEDYPkVaLY3B2Eiw4YIJkRfvKjW-SELGJU2OG52PclZYAGmW1nw-MSn_2_C3z2O9B2In9F2PruPqJO9SBFKqpxMmt75WF_hxh3RdiamTif-cQCXYykbVSZugpg"><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fnancy-mo-767296243%3Ffbclid%3DIwAR0BA51hEDIq8kxUPQC58pSNj_r73QbNM8L_Q_o-Mmk2wJa-jG_-GsRlE_I&h=AT0iayOyJ8KgfEDYPkVaLY3B2Eiw4YIJkRfvKjW-SELGJU2OG52PclZYAGmW1nw-MSn_2_C3z2O9B2In9F2PruPqJO9SBFKqpxMmt75WF_hxh3RdiamTif-cQCXYykbVSZugpg"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--
+I worked in ........ company as trainee in web developer field for ........
+-->
